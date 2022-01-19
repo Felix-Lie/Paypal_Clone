@@ -1,3 +1,41 @@
+// Pages
+document.querySelectorAll('.logo').forEach((logo) => {
+  logo.addEventListener('click', () => {
+    document.querySelector('.front-page').style.display = 'block';
+  });
+  logo.addEventListener('click', () => {
+    document.querySelector('.login-page').style.display = 'none';
+  });
+  logo.addEventListener('click', () => {
+    document.querySelector('.signup-page').style.display = 'none';
+  });
+});
+
+document.querySelectorAll('.login').forEach((loginBtn) => {
+  loginBtn.addEventListener('click', () => {
+    document.querySelector('.front-page').style.display = 'none';
+  });
+  loginBtn.addEventListener('click', () => {
+    document.querySelector('.login-page').style.display = 'block';
+  });
+  loginBtn.addEventListener('click', () => {
+    document.querySelector('.signup-page').style.display = 'none';
+  });
+});
+
+document.querySelectorAll('.signup').forEach((signupBtn) => {
+  signupBtn.addEventListener('click', () => {
+    document.querySelector('.front-page').style.display = 'none';
+  });
+  signupBtn.addEventListener('click', () => {
+    document.querySelector('.login-page').style.display = 'none';
+  });
+  signupBtn.addEventListener('click', () => {
+    document.querySelector('.signup-page').style.display = 'flex';
+  });
+});
+// End of Pages
+
 // Navigation
 const dropdownItems = document.querySelectorAll('.dropdown-hover');
 
